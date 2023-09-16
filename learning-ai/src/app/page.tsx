@@ -3,6 +3,6 @@ import Image from "next/image";
 
 export default function Home () {
   return (
-    <Button>Helo Next-Js</Button>
+    <Button>Its Me Next-Js</Button>
   )
 }

@@ -7,3 +7,5 @@
 "client_secret":"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",
 "redirect_uris":["http://localhost:3000/api/auth/callback/google"],
 "javascript_origins":["http://localhost:3000"]}}
+
+14646
