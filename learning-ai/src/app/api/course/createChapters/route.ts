@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { createChapterScheme } from "@/validators/course";
+import { createChaptersSchema } from "@/validators/course";
 import { ZodError } from "zod";
 import { strict_output } from "@/lib/gpt";
 import { getUnsplashImage } from "@/lib/unsplash";
@@ -18,7 +18,7 @@ export async function POST(req: Request, res: Response) {
       return new NextResponse("no credits", { status: 402 });
     }
     const body = await req.json();
-    const { title, units } = createChapterScheme.parse(body);
+    const { title, units } = createChaptersSchema.parse(body);
 
     type outputUnits = {
       title: string;
