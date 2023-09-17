@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import { Provider } from "@/components/Providers";
-import { Toast } from "@radix-ui/react-toast";
 import { Toaster } from "@/components/ui/toaster";
+import { Toast } from "@radix-ui/react-toast";
 
 const lexend = Lexend({ subsets: ["latin"] });
 
